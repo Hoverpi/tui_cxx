@@ -1,16 +1,3 @@
-# tui_cxx
-A lightweight, STB-style single-file TUI library for C.
-
-## Features
-* **Constraint-based Layout:** Support for FIXED, FLEX, and ABSOLUTE sizing.
-* **N-ary Widget Tree:** Easily nest layouts (VRECT, HRECT, STACK).
-* **Double Buffered:** Efficient rendering to prevent terminal flicker.
-* **Single Header:** Just drop `tui.h` into your project.
-
-## Example Usage
-In **one** C file, define `TUI_IMPLEMENTATION` before including the header to create the implementation.
-
-```c
 #define TUI_IMPLEMENTATION
 #include "tui.h"
 
@@ -44,4 +31,4 @@ int main() {
     tui_destroy(&tui);
     return 0;
 }
-```
+
